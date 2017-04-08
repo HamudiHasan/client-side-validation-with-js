@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Hello Bello</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body>
+        <form onsubmit="return validation()">
+            <div class="form_div" >
+                <p>First Name </p> 
+                <input class="text_field"  id="first_name"> <span id="span_first_name">*Please Enter Your First Name</span>
+            </div>
+            <div class="form_div" >
+                <p>Last Name </p> 
+               
+                <input class="text_field" id="last_name"> <span id="span_last_name">*Please Enter Your Last Name</span>
+            </div>
+            <div class="form_div" >
+                 <p>Email id </p> 
+                <input class="text_field" id="user_email"> <span id="span_email">*Please Enter an Email</span>
+            </div>
+            <div class="form_div">
+                <p>Gender <span id="span_gender">*Please Select a Gender</span></p> 
+                <input type="radio" name = "gender" value="M"> Male<br>
+                <input type="radio" name = "gender" value="F"> Female<br>
+            </div>
+            <div class="form_div" >
+                District : <span id="span_district">*Please Select a District</span><br>
+                <select id="dd_district" >
+                    <option value="" selected="selected">--- Select---</option>
+                    <option value="DH">Dhaka</option>
+                    <option value="FP">Faridpur</option>
+                    <option value="RB">Rajbari</option>
+                </select>
+            </div>
+            <input value="Submit" type="submit">
+            </form>
+    </body>
+    <script type="text/javascript" src="script.js" ></script>
+</html>
